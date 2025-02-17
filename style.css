@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #fb7474; /* Added missing semicolon */
   color: #333;
 }
 
@@ -37,7 +37,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fb7474;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.2em;
 }
