@@ -9,8 +9,8 @@ html {
   
   .cf:before,
   .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 
+    display: table; 
   }
   
   .cf:after {
@@ -19,7 +19,7 @@ html {
   
   main {
     max-width: 960px;
-    border: 1px solid #000;
+    border: 1px solid #dd7eb2;
     margin: 20px auto;
     /* background-image: url("https://assets.codepen.io/7248/grid-1.png");*/
   }
@@ -41,7 +41,7 @@ html {
   }
   
   aside {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(228, 82, 155, 0.3);
     width: 27.2916%;
     margin-left: 2.0833%;
     float: left;
