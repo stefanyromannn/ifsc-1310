@@ -1,14 +1,13 @@
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fb7474; 
+  background-color: #fb7474;
   color: #333;
 }
 
 header {
-  background-color: #fb7474; 
+  background-color: #fb7474;
   color: white;
   padding: 20px;
   text-align: center;
@@ -31,9 +30,16 @@ nav ul {
 }
 
 nav ul li {
+  display: block;  
+  margin-bottom: 10px; 
+} 
+
+
+/*nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
+*/
 
 nav ul li a {
   text-decoration: none;
@@ -43,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #333; 
+  color: #333;
 }
 
 footer {
@@ -54,4 +60,47 @@ footer {
   color: white;
 }
 
-  
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
