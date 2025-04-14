@@ -1,178 +1,133 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<header class="container" id="top">
+  <!-- Main navigation -->
+  <nav class="primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Main -->
+<main itemscope itemtype="http://schema.org/Person" class="container">
+  <h1 class="page-title">Stefany Roman</h1>
+  <section id="about">
+    <h2 class="visuallyhidden">Personal Details</h2>
+    <div class="bio">
+      <img itemprop="image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/headshot.jpg" alt="Your Name">
+      <p itemprop="description">I am a driven young woman passionate about using technology to create meaningful change. With a strong foundation in innovation, development, and problem-solving, I am eager to contribute to projects that improve lives and shape the future. Committed to descovering and learning new technology to have a positive societal impact. I bring a fresh perspective, a determination to learn, and a deep desire to make a lasting difference in the world.</p>
+    </div>
+    <dl class="details">
+      <dt>Name</dt>
+      <dd itemprop="name">
+        <span itemprop="givenName">Stefany</span> <span itemprop="familyName">Roman</span>
+      </dd>
+      <dt>Date of birth</dt>
+      <dd itemprop="birthDate"><time datetime="2000-10-12">12/14/2000</time></dd>
+      <dt>Nationality</dt>
+      <dd itemprop="nationality">United States</dd>
+      <dt>Location</dt>
+      <dd itemprop="homeLocation">Arkansas</dd>
+      <dt>Telephone</dt>
+      <dd>
+        <a itemprop="telephone" href="tel:555.555.5555">501.478.9520</a>
+      </dd>
+      <dt>Email</dt>
+      <dd>
+        <a itemprop="email" href="mailto:stefanyroman@yahoo.com">Stefanyroman@yahoo.com</a>
+      </dd>
+      <dt>Address</dt>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stefany Roman - Personal Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Personal portfolio of Stefany Roman, including skills, experience, and contact information.">
+      <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">2801 South University</span>
+        <span itemprop="addressLocality">Little Rock</span>
+        <span itemprop="postalCode">72022</span>
+        <span itemprop="addressCountry">USA</span>
+      </dd>
 
+    </dl>
+    <ul class="related-links">
+      <li><a itemprop="url" rel="me" href="https://crispy-space-disco-jj797w4rq46pfpwqw.github.dev/"></i> github</a></li>
+      <li><a itemprop="url" rel="me" href="http://linkedin.com/profile"><i class="fab fa-linkedin-in"></i> linkedin</a></li>
+      <li><a itemprop="url" href="resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a></li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li class="skill">HTML</li>
+      <li class="skill">PHP</li>
+      <li class="skill">Java</li>
+      <li class="skill">Scss</li>
+    </ul>
 
-  <meta property="og:title" content="Stefany Roman">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.yoursite.com">
-  <meta property="og:image" content="https://www.yoursite.com/images/profile.jpg">
-
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <!-- Header / Main navigation -->
-  <header class="container" id="top">
-    <!-- Main navigation -->
-    <nav class="primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Main -->
-  <main itemscope itemtype="http://schema.org/Person" class="container">
-    <h1 class="page-title">Stefany Roman</h1>
-    <section id="about">
-      <h2>Personal Details</h2>
-      <div class="bio">
-        <img itemprop="image" src="img/resumepotriat.JPG" alt="Your Name">
-        <p itemprop="description">I am a driven young woman passionate about using technology to create meaningful change. With a strong foundation in innovation, development, and problem-solving, I am eager to contribute to projects that improve lives and shape the future. Committed to descovering and learning new technology to have a positive societal impact. I bring a fresh perspective, a determination to learn, and a deep desire to make a lasting difference in the world.</p>
-      </div>
-      <dl class="details">
-        <dt>Full Name</dt>
-        <dd itemprop="name">
-          <span itemprop="givenName">Stefany</span> <span itemprop="familyName">Roman</span>
-        </dd>
-        <dt>Date of birth</dt>
-        <dd itemprop="birthDate"><time datetime="2000-10-12">December 14th, 2000</time></dd>
-        <dt>Nationality</dt>
-        <dd itemprop="nationality">United States</dd>
-        <dt>Location</dt>
-        <dd itemprop="homeLocation">Arkansas</dd>
-        <dt>Telephone</dt>
-        <dd>
-          <a itemprop="telephone" href="tel:555.555.5555">501.478.9520</a>
-        </dd>
-        <dt>Email</dt>
-        <dd>
-          <a itemprop="email" href="mailto:email@mail.com">Stefanyroman@yahoo.com</a>
-        </dd>
-        <dt>Address</dt>
-  
-        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">2801 South University</span>
-          <span itemprop="addressLocality">Little Rock</span>
-          <span itemprop="postalCode">72204</span>
-          <span itemprop="addressCountry">USA</span>
-        </dd>
-  
-      </dl>
-      <ul class="related-links">
-        <li><a itemprop="url" rel="me" href="https://crispy-space-disco-jj797w4rq46pfpwqw.github.dev/"> github</a></li>
-        <li><a itemprop="url" rel="me" href="http://linkedin.com/profile">linkedin</a></li>
-        <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
-        <li><a href="https://crispy-space-disco-jj797w4rq46pfpwqw-5500.app.github.dev/resume/index.html">Course Index</a></li>
-      </ul>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill">HTML</li>
-        <li class="skill">PHP</li>
-        <li class="skill">Java</li>
-        <li class="skill">Scss</li>
-      </ul>
-  
-    </section>
-    <section id="experience">
-      <h2>Experience</h2>
-      <!-- current job -->
-      <article class="job">
-        <h3 itemprop="jobTitle">Medical scribe / Medical Assistant</h3>
-        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Baptist Health</span>
-          <span>July 2023 - Present</span>
-          <p itemprop="description">In charge of coding all finances for patients, generating a list ready for the doctors approval including the following things: medications dosages, and alternative diagnosis, gave recommendations and preventions. Shadowing the doctors all day and mentally recording and typing in all the information she'd say to her patients. Adminstarted Injections, diabetic eye exams, ear lavages, and respiratory treatments: updrafts.</p>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+  </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <!-- current job -->
+    <article class="job">
+      <h3 itemprop="jobTitle">Medical scribe / Medical Assistant</h3>
+      <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <span itemprop="name">Baptist Health</span>
+        <span>July 2023 - Present</span>
+        <p itemprop="description">In charge of coding all finances for patients, generating a list ready for the doctors approval including the following things: medications dosages, and alternative diagnosis, gave recommendations and preventions. Shadowing the doctors all day and mentally recording and typing in all the information she'd say to her patients. Adminstarted Injections, diabetic eye exams, ear lavages, and respiratory treatments: updrafts.</p>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             <a itemprop="url" href="https://www.baptist-health.com/">Company URL</a>
             <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
               <span itemprop="addressLocality">Little Rock AR, USA</span>
-            </span>
-          </span>
-        </div>
-      </article>
-      <!-- Previous Jobs - Notice Slightly Different Format-->
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Pharmacy technician</h3>
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Walgreens</span>
-          <a itemprop="url" href="https://www.walgreens.com/?msockid=252707dff7776f640d57130bf6996e87">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere,USA</span>
-          </span>
         </span>
-        <div itemscope itemtype="https://schema.org/EmployeeRole">
-          <span itemprop="startDate" content="2006-02-21T20:00">March 2018</span> -
-          <span itemprop="endDate" content="2009-02-21T20:00">February 2020</span>
-        </div>
-        <p itemprop="description">Help the pharmacy with any kind of communication to help the Hispanic community. Attend the drive through window helping customers get their prescriptions and/or fill a prescription.</p>
-      </article>
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Student Intern: Dr Rebbeca</h3>
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Baptist Health</span>
-          <a itemprop="url" href="https://www.baptist-health.com/">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere,USA</span>
-          </span>
+      </div>
+    </article>
+    <!-- Previous Jobs - Notice Slightly Different Format-->
+    <article class="job" itemscope itemtype="http://schema.org/Organization">
+      <h3 itemprop="name">Pharmacy technician</h3>
+      <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">Walgreens</span>
+        <a itemprop="url" href="https://www.walgreens.com/?msockid=252707dff7776f640d57130bf6996e87">Company URL</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Little Rock,USA</span>
         </span>
-        <div itemscope itemtype="https://schema.org/EmployeeRole">
-          <span itemprop="startDate" content="2006-02-21T20:00">February 2018</span> -
-          <span itemprop="endDate" content="2009-02-21T20:00">August 2019</span>
-        </div>
-        <p itemprop="description">Regularly shadowed a nurse, patient care tech, or was trusted and left unsupervised to visit patients independently. Providing them with any information I could assist on or with any needs they had.</p>
-      </article>
-    </section>
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science"> High School </abbr> Diploma </h3>
-        <span itemprop="name">Bryant High School</span>
-        <span itemprop="location" itemscope>Bryant AR, USA</span>
-        <span>2015-2019</span>
-      </article>
-    </section>
-  
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+      </span>
+      <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">March 2018</span> -
+        <span itemprop="endDate" content="2009-02-21T20:00">February 2020</span>
+      </div>
+      <p itemprop="description">Help the pharmacy with any kind of communication to help the Hispanic community. Attend the drive through window helping customers get their prescriptions and/or fill a prescription.</p>
+    </article>
+    <article class="job" itemscope itemtype="http://schema.org/Organization">
+      <h3 itemprop="name">Student Intern: Dr Rebbeca</h3>
+      <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">Baptist Health</span>
+        <a itemprop="url" href="https://www.baptist-health.com/">Company URL</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Little Rock, USA</span>
+        </span>
+      </span>
+      <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">February 2018</span> -
+        <span itemprop="endDate" content="2009-02-21T20:00">August 2019</span>
+      </div>
+      <p itemprop="description">Regularly shadowed a nurse, patient care tech, or was trusted and left unsupervised to visit patients independently. Providing them with any information I could assist on or with any needs they had.</p>
+    </article>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
         <h3 itemprop="description"><abbr title="Master of Science">ASD:</abbr> Libral Arts and Science </h3>
         <span itemprop="name">University Of Pulaski Technical College</span>
         <span itemprop="location" itemscope>North Little Rock AR, USA</span>
         <span>2020-2022</span>
       </article>
-    </section>
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science">Bachlor's Degree:</abbr> Computer Science.. In progress</h3>
-        <span itemprop="name">University Of Little Rock Arkansas</span>
-        <span itemprop="location" itemscope>Little Rock AR, USA</span>
-        <span>2024-Current</span>
-      </article>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div id="copyright">
-      &copy; 2024 Stefany Roman| <a href="#top">Top</a>
-    </div>
-  </footer>
-  <header class="container" id="top">
- 
+  </section>
+    
+</main>
+<!-- Footer -->
+<footer>
+  <div id="copyright">
+    &copy; 2025 Name | <a href="#top">Top</a>
+  </div>
+</footer>
 
   
   
