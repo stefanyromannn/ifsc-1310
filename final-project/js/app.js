@@ -1,38 +1,124 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Log a message when the page loads
-  console.log("GoodGuyz Remodeling website loaded successfully!");
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  // Smooth scrolling for navigation links
-  const navLinks = document.querySelectorAll("nav ul li a");
-  navLinks.forEach(link => {
-    link.addEventListener("click", event => {
-      const targetId = event.target.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
 
-      if (targetSection) {
-        event.preventDefault(); // Prevent default anchor behavior
-        targetSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    });
-  });
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-  // Lazy loading for gallery images
-  const galleryImages = document.querySelectorAll(".gallery img");
-  const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src; // Replace placeholder src with the actual image source
-        img.removeAttribute("data-src");
-        observer.unobserve(img); // Stop observing once loaded
-      }
-    });
-  });
+/* Header Styling */
+header {
+  background-color: #333;
+  padding: 0.5rem 0;
+  text-align: center;
+}
 
-  galleryImages.forEach(img => {
-    imageObserver.observe(img);
-  });
-});
+/* Logo Styling */
+.logo {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation Styling */
+.container nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container nav ul li a:hover {
+  color: #f4a261;
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/img/hero.jpg') no-repeat center center/cover;
+  color: #000;
+  text-align: center;
+  padding: 4rem 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Titles */
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Services Section */
+.services .grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+}
+
+.services .card img {
+  width: 100%;
+  height: auto;
+}
+
+.services .card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.services .card p {
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+/* Gallery Section */
+.gallery .grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 300px;
+  border-radius:
