@@ -26,10 +26,10 @@ header {
 }
 
 .logo {
-  width: 100%;
-  max-height: 100px;
-  object-fit: contain;
+  max-width: 150px; /* Set a reasonable max width */
+  height: auto; /* Maintain aspect ratio */
   display: block;
+  margin: 0 auto; /* Center the logo */
 }
 
 /* Navigation Styling */
@@ -57,7 +57,7 @@ header {
   color: #000;
   text-align: center;
   padding: 4rem 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -153,6 +153,34 @@ h2 {
   padding: 2rem 1rem;
   margin: 0 auto;
   max-width: 800px;
+}
+
+/* About Us Section */
+#about {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about-box {
+  background-color: #f4f4f4; /* Light background color */
+  border: 2px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+  padding: 2rem; /* Add spacing inside the box */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the box */
+}
+
+.about-box h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-box p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Footer */
