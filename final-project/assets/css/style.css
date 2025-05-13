@@ -18,44 +18,49 @@ body {
   padding: 0 1rem;
 }
 
-/* Header and Navigation */
+/* Header Styling */
 header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+  background-color: #333; /* Optional: Add a background color behind the logo */
+  text-align: center;
+  padding: 0; /* Remove padding to ensure the logo spans edge-to-edge */
 }
 
-header .logo {
-  max-width: 150px;
+/* Logo Styling */
+.logo {
+  max-width: 300px; /* Limit the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the logo horizontally */
 }
 
-header nav ul {
-  list-style: none;
+/* Navigation Styling */
+.container nav ul {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  list-style: none;
+  gap: 1rem;
+  margin: 1rem 0; /* Add spacing below the logo */
 }
 
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
+.container nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+.container nav ul li a:hover {
   color: #f4a261;
 }
 
 /* Hero Section */
 .hero {
   background: url('assets/img/hero.jpg') no-repeat center center/cover;
-  color: #fff;
+  color: #000; /* Change text color to black */
   text-align: center;
   padding: 4rem 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to text */
 }
 
 .hero h1 {
@@ -139,6 +144,19 @@ h2 {
   color: #f4a261;
 }
 
+/* Center the About Us section */
+#about {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 800px; /* Optional: Limit the width for better readability */
+}
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>GoodGuyz Remodeling is your trusted partner for all your home remodeling needs. We turn your vision into reality with top-notch craftsmanship and personalized service.</p>
+</section>
+
 /* Footer */
 footer {
   background: #333;
@@ -181,3 +199,17 @@ footer p {
     margin: 10px 0;
   }
 }
+```
+<header>
+  <div class="container">
+    <img src="assets/img/logo.jpg" alt="GoodGuyz Remodeling Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
