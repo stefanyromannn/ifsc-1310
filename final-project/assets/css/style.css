@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Header Styling */
+
 header {
   background-color: #333;
   padding: 0.5rem 0;
@@ -26,13 +26,13 @@ header {
 }
 
 .logo {
-  max-width: 150px; /* Set a reasonable max width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; 
+  height: auto; 
   display: block;
-  margin: 0 auto; /* Center the logo */
+  margin: 0 auto; 
 }
 
-/* Navigation Styling */
+
 .container nav ul {
   display: flex;
   justify-content: center;
@@ -51,10 +51,9 @@ header {
   color: #0e0702;
 }
 
-/* Hero Section */
 .hero {
   background: url('assets/img/hero.jpg') no-repeat center center/cover;
-  color: #000; /* Change text color to black */
+  color: #000; 
   text-align: center;
   padding: 4rem 1rem;
 }
@@ -62,15 +61,15 @@ header {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-shadow: none; /* Ensure no shadow */
+  text-shadow: none; 
 }
 
 .hero p {
   font-size: 1.2rem;
-  text-shadow: none; /* Ensure no shadow */
+  text-shadow: none; 
 }
 
-/* Section Titles */
+
 h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -78,7 +77,6 @@ h2 {
   color: #333;
 }
 
-/* Services Section */
 .services .grid {
   display: flex;
   gap: 1.5rem;
@@ -111,7 +109,6 @@ h2 {
   color: #666;
 }
 
-/* Gallery Section */
 .gallery .grid {
   display: flex;
   gap: 1.5rem;
@@ -120,20 +117,20 @@ h2 {
 }
 
 .gallery-item {
-  text-align: center; /* Center-align the text under each image */
-  max-width: 300px; /* Limit the width of each gallery item */
+  text-align: center; 
+  max-width: 300px; 
 }
 
 .gallery-item img {
-  max-width: 100%; /* Ensure the image fits within its container */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  max-width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .gallery-item p {
-  margin-top: 0.5rem; /* Add spacing between the image and text */
-  font-size: 1rem; /* Adjust the font size */
-  color: #333; /* Set the text color */
+  margin-top: 0.5rem; 
+  font-size: 1rem; 
+  color: #333; 
 }
 
 .gallery img {
@@ -148,7 +145,7 @@ h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Section */
+
 .contact {
   text-align: center;
   padding: 2rem 1rem;
@@ -165,20 +162,20 @@ h2 {
   color: #f4a261;
 }
 
-/* About Us Section */
+
 #about {
   padding: 2rem 1rem;
   text-align: center;
 }
 
 .about-box {
-  background-color: #f4f4f4; /* Light background color */
-  border: 2px solid #ddd; /* Subtle border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
-  padding: 2rem; /* Add spacing inside the box */
-  max-width: 800px; /* Limit the width for better readability */
-  margin: 0 auto; /* Center the box */
+  background-color: #f4f4f4; 
+  border: 2px solid #ddd; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 2rem; 
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
 .about-box h2 {
@@ -193,7 +190,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* Footer */
+
 footer {
   background: #333;
   color: #fff;
@@ -205,7 +202,7 @@ footer p {
   margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .services .grid, .gallery .grid {
     flex-direction: column;

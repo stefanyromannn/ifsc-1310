@@ -1,8 +1,7 @@
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
   console.log("JavaScript is connected and working!");
 
-  // Smooth Scrolling for Navigation Links
+  
   const navLinks = document.querySelectorAll("nav ul li a");
   navLinks.forEach(link => {
     link.addEventListener("click", event => {
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault(); 
         targetSection.scrollIntoView({
           behavior: "smooth",
           block: "start"
@@ -19,15 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Lazy Loading for Gallery Images
+ 
   const galleryImages = document.querySelectorAll(".gallery img");
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.src = img.dataset.src; // Replace placeholder src with the actual image source
+        img.src = img.dataset.src; 
         img.removeAttribute("data-src");
-        observer.unobserve(img); // Stop observing once loaded
+        observer.unobserve(img); 
       }
     });
   });
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const gallery = document.querySelector(".gallery .grid");
   const items = gallery.innerHTML;
-  gallery.innerHTML = items; // This duplicates the gallery items
+  gallery.innerHTML = items; 
 
   const serviceCards = document.querySelectorAll(".services .card");
   serviceCards.forEach(card => {
