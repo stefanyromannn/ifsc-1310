@@ -54,7 +54,7 @@ header {
 /* Hero Section */
 .hero {
   background: url('assets/img/hero.jpg') no-repeat center center/cover;
-  color: #0c0101; /* Ensure the text color is white */
+  color: #000; /* Change text color to black */
   text-align: center;
   padding: 4rem 1rem;
 }
@@ -62,12 +62,12 @@ header {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  text-shadow: none; /* Remove the shadow */
+  text-shadow: none; /* Ensure no shadow */
 }
 
 .hero p {
   font-size: 1.2rem;
-  text-shadow: none; /* Remove the shadow */
+  text-shadow: none; /* Ensure no shadow */
 }
 
 /* Section Titles */
@@ -119,6 +119,23 @@ h2 {
   justify-content: center;
 }
 
+.gallery-item {
+  text-align: center; /* Center-align the text under each image */
+  max-width: 300px; /* Limit the width of each gallery item */
+}
+
+.gallery-item img {
+  max-width: 100%; /* Ensure the image fits within its container */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.gallery-item p {
+  margin-top: 0.5rem; /* Add spacing between the image and text */
+  font-size: 1rem; /* Adjust the font size */
+  color: #333; /* Set the text color */
+}
+
 .gallery img {
   max-width: 300px;
   border-radius: 8px;
@@ -146,14 +163,6 @@ h2 {
 
 .contact a:hover {
   color: #f4a261;
-}
-
-/* Center the About Us section */
-#about {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 /* About Us Section */
